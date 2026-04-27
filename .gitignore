@@ -1,0 +1,11 @@
+.env
+*.log
+__pycache__/
+*.pyc
+.venv/
+projects_export_*.csv
+pip-build-tracker-*
+pip-ephem-wheel-cache-*
+pip-install-*
+pip-target-*
+pip-unpack-*

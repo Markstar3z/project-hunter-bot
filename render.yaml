@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: project-hunter-bot
+    runtime: python
+    plan: starter
+    rootDir: project_hunter_bot
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.13
+      - key: DATA_DIR
+        value: /var/data
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: COINGECKO_API_KEY
+        sync: false
